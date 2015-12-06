@@ -1,5 +1,5 @@
 ﻿<phone:PhoneApplicationPage
-    x:Class="Tagarela.Login"
+    x:Class="Tagarela.Usuario"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
@@ -23,20 +23,16 @@
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel Grid.Row="0" Margin="12,17,0,28">
             <TextBlock Text="Tagarela" Style="{StaticResource PhoneTextNormalStyle}"/>
-            <TextBlock Text="Login" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+            <TextBlock x:Name="tbNick" Text="nick" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
             <StackPanel Grid.Row="0">
-                <TextBlock x:Name="tbLogin" Style="{StaticResource PhoneTextTitle3Style}" Text="Usuário" />
-                <TextBox x:Name="txtLogin" Text="rafael@gmail.com" />
-                <TextBlock x:Name="tbSenha" Style="{StaticResource PhoneTextTitle3Style}">
-            	<Run Text="Senha"/>
-                </TextBlock>
-                <TextBox x:Name="txtSenha" Text="123456" />
-
-                <Button x:Name="btnEntrar" Content="Entrar" Click="btnEntrar_Click"/>
+                <Button x:Name="btAdicionar" Content="Adicionar amigo" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.RowSpan="2" Click="btAdicionar_Click"/>
+                <Button x:Name="btAceitar" Content="Aceitar amigo" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="131,0" Click="btAceitar_Click" />
+                <TextBlock x:Name="tbAmigos" TextWrapping="Wrap" Text="Amigos" VerticalAlignment="Top"/>
+                <ListBox Margin="0, 10, 0, 0" x:Name="perguntaList" RenderTransformOrigin="0.5,0.5" SelectionMode="Extended" ScrollViewer.HorizontalScrollBarVisibility="Visible" ScrollViewer.VerticalScrollBarVisibility="Visible"/>
             </StackPanel>
         </Grid>
     </Grid>

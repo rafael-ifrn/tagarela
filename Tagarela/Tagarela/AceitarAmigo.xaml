@@ -1,11 +1,12 @@
 ﻿<phone:PhoneApplicationPage
-    x:Class="Tagarela.Login"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
     xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:System="clr-namespace:System;assembly=mscorlib"
+    x:Class="Tagarela.AceitarAmigo"
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
@@ -22,21 +23,19 @@
 
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock Text="Tagarela" Style="{StaticResource PhoneTextNormalStyle}"/>
-            <TextBlock Text="Login" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+            <TextBlock Style="{StaticResource PhoneTextNormalStyle}">
+				<Run Text="Tagarela"/>
+				<LineBreak/>
+				<Run/>
+            </TextBlock>
+            <TextBlock Text="Solicitações" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
         </StackPanel>
 
-        <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
             <StackPanel Grid.Row="0">
-                <TextBlock x:Name="tbLogin" Style="{StaticResource PhoneTextTitle3Style}" Text="Usuário" />
-                <TextBox x:Name="txtLogin" Text="rafael@gmail.com" />
-                <TextBlock x:Name="tbSenha" Style="{StaticResource PhoneTextTitle3Style}">
-            	<Run Text="Senha"/>
-                </TextBlock>
-                <TextBox x:Name="txtSenha" Text="123456" />
-
-                <Button x:Name="btnEntrar" Content="Entrar" Click="btnEntrar_Click"/>
+                <TextBlock x:Name="tbAmigos" TextWrapping="Wrap" Text="Usuários" VerticalAlignment="Top"/>
+                <ListBox Margin="0, 10, 0, 0" x:Name="lbPedidos" RenderTransformOrigin="0.5,0.5" SelectionMode="Extended" ScrollViewer.HorizontalScrollBarVisibility="Visible" ScrollViewer.VerticalScrollBarVisibility="Visible" MaxHeight="400" Height="200" BorderBrush="White" BorderThickness="1"/>
+                <Button x:Name="btAceitar" Content="Aceitar amigo" Margin="0" Click="btAceitar_Click" VerticalAlignment="Top" HorizontalAlignment="Center" />
             </StackPanel>
         </Grid>
     </Grid>

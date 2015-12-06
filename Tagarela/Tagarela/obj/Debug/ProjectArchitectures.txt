@@ -1,1 +1,1 @@
-c:\users\rafael\documents\visual studio 2015\Projects\Tagarela\Tagarela\Tagarela.csproj;neutral
+C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Tagarela.csproj;neutral

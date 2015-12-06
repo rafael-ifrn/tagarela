@@ -35,28 +35,33 @@ namespace Tagarela
             canalNotificacao();
             canalNotificacao();
 
-            Model.Autenticacao a = new Model.Autenticacao
+
+            Model.Login a = new Model.Login
             {
                 username = txtLogin.Text,
-                senha = txtSenha.Text,
-                uri = uri
+                password = txtSenha.Text,
             };
 
-            MessageBox.Show(String.Format("O canal URI é {0}", uri));
+           // MessageBox.Show(String.Format("O canal URI é {0}", uri));
 
-            string s = "=" + JsonConvert.SerializeObject(a);
+            string s = JsonConvert.SerializeObject(a);
 
-            var content = new StringContent(s, Encoding.UTF8, "application/x-www-form-urlencoded");
+            var content = new StringContent(s, Encoding.UTF8, "application/json");
 
             var response = await httpClient.PostAsync("/api/user/login", content);
 
             var str = response.Content.ReadAsStringAsync().Result;
 
-            str = "OK";
+            Model.Dados sessao = JsonConvert.DeserializeObject<Model.Dados>(str);
 
-            if (str == "OK")
+            //            str = "OK";
+
+            MessageBox.Show(String.Format("resposta do login é {0}", sessao.session.email));
+
+            if (sessao.session.email != "")
             {
-                NavigationService.Navigate(new Uri("/login.xaml", UriKind.Relative));
+                NavigationService.Navigate(new Uri("/Usuario.xaml?sessao=" + sessao.session._id, UriKind.Relative));
+                // NavigationService.Navigate(new Uri("/login.xaml", UriKind.Relative));
             }
         }
 

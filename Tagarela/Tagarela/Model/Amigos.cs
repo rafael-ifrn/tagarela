@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace Tagarela.Model
 {
-    class Autenticacao
+    class Amigos
     {
-        public string username { get; set; }
-        public string password { get; set; }
-        public string nick { get; set; }
+        public Amigo[] amigos { get; set; }
     }
 }

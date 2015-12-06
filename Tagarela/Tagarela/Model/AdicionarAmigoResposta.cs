@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Tagarela.Model
 {
-    class Autenticacao
+    class AdicionarAmigoResposta
     {
-        public string username { get; set; }
-        public string password { get; set; }
-        public string nick { get; set; }
+        public string amigo { get; set; }
+        public string user { get; set; }
+        public bool result { get; set; }
     }
 }
