@@ -44,7 +44,7 @@ namespace Tagarela
 
         }
 
-        private async void btnLogin_Click(object sender, RoutedEventArgs e)
+        private async void btnLogin_Click(object sender, EventArgs e)
         {
             HttpClient httpClient = new HttpClient();
             httpClient.BaseAddress = new Uri(servidor);
@@ -71,15 +71,15 @@ namespace Tagarela
 
             Model.Dados sessao = JsonConvert.DeserializeObject<Model.Dados>(str);
 
-            MessageBox.Show(String.Format("resposta do login é {0}", sessao.session._id));
+            //MessageBox.Show(String.Format("resposta do login é {0}", sessao.session._id));
 
             if (sessao.session.email != "")
             {
-                NavigationService.Navigate(new Uri("/Usuario.xaml?sessao=" + sessao.session._id +"&nick="+ sessao.session.nick, UriKind.Relative));
+                NavigationService.Navigate(new Uri("/Usuario.xaml?sessao=" + sessao.session._id +"&nick="+ sessao.session.nick +"&pedidos="+ sessao.session.pedidos.Length, UriKind.Relative));
             }
         }
 
-        private void btnRegistrar_Click(object sender, RoutedEventArgs e)
+        private void btnRegistrar_Click(object sender, EventArgs e)
         {
             NavigationService.Navigate(new Uri("/Registrar.xaml", UriKind.Relative));
         }

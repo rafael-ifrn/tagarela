@@ -100,6 +100,12 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Configuracoes.xaml.cs">
+      <DependentUpon>Configuracoes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DesbloquearAmigo.xaml.cs">
+      <DependentUpon>DesbloquearAmigo.xaml</DependentUpon>
+    </Compile>
     <Compile Include="LocalizedStrings.cs" />
     <Compile Include="Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
@@ -112,7 +118,10 @@
     <Compile Include="Model\Amigo.cs" />
     <Compile Include="Model\Amigos.cs" />
     <Compile Include="Model\Autenticacao.cs" />
+    <Compile Include="Model\Configuracoes.cs" />
+    <Compile Include="Model\ConfiguracoesResposta.cs" />
     <Compile Include="Model\Dados.cs" />
+    <Compile Include="Model\ErroPadrao.cs" />
     <Compile Include="Model\Login.cs" />
     <Compile Include="Model\Sessao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -138,6 +147,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="AdicionarAmigo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Configuracoes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DesbloquearAmigo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -171,6 +188,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\add.png" />
     <Content Include="Assets\AlignmentGrid.png" />
     <Content Include="Assets\ApplicationIcon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -197,6 +215,42 @@
     <Content Include="Assets\Tiles\IconicTileSmall.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Images\back.png" />
+    <Content Include="Images\basecircle.png" />
+    <Content Include="Images\cancel.png" />
+    <Content Include="Images\check.png" />
+    <Content Include="Images\close.png" />
+    <Content Include="Images\delete.png" />
+    <Content Include="Images\download.png" />
+    <Content Include="Images\edit.png" />
+    <Content Include="Images\favs.addto.png" />
+    <Content Include="Images\favs.png" />
+    <Content Include="Images\feature.alarm.png" />
+    <Content Include="Images\feature.calendar.png" />
+    <Content Include="Images\feature.camera.png" />
+    <Content Include="Images\feature.email.png" />
+    <Content Include="Images\feature.phone.png" />
+    <Content Include="Images\feature.search.png" />
+    <Content Include="Images\feature.settings.png" />
+    <Content Include="Images\feature.video.png" />
+    <Content Include="Images\folder.png" />
+    <Content Include="Images\like.png" />
+    <Content Include="Images\microphone.png" />
+    <Content Include="Images\minus.png" />
+    <Content Include="Images\new.png" />
+    <Content Include="Images\next.png" />
+    <Content Include="Images\overflowdots.png" />
+    <Content Include="Images\questionmark.png" />
+    <Content Include="Images\refresh.png" />
+    <Content Include="Images\save.png" />
+    <Content Include="Images\share.png" />
+    <Content Include="Images\stop.png" />
+    <Content Include="Images\sync.png" />
+    <Content Include="Images\transport.ff.png" />
+    <Content Include="Images\transport.pause.png" />
+    <Content Include="Images\transport.play.png" />
+    <Content Include="Images\transport.rew.png" />
+    <Content Include="Images\upload.png" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\AppResources.resx">

@@ -1,6 +1,7 @@
-﻿<xapCache source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Bin\Debug\Tagarela_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="05/12/2015 21:42:05">
-  <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Bin\Debug\resources.pri" archivePath="resources.pri" lastWriteTime="05/12/2015 21:42:03" />
-  <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\obj\Debug\Tagarela.dll" archivePath="Tagarela.dll" lastWriteTime="05/12/2015 21:42:02" />
+﻿<xapCache source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Bin\Debug\Tagarela_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="06/12/2015 05:08:22">
+  <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Bin\Debug\resources.pri" archivePath="resources.pri" lastWriteTime="06/12/2015 05:08:20" />
+  <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\obj\Debug\Tagarela.dll" archivePath="Tagarela.dll" lastWriteTime="06/12/2015 05:08:19" />
+  <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\add.png" archivePath="Images\add.png" lastWriteTime="06/12/2015 01:44:52" />
   <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="05/12/2015 13:00:18" />
   <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Assets\BadgeLogo.png" archivePath="Assets\BadgeLogo.png" lastWriteTime="05/12/2015 13:00:18" />
   <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Assets\Logo.png" archivePath="Assets\Logo.png" lastWriteTime="05/12/2015 13:00:18" />
@@ -13,6 +14,42 @@
   <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="05/12/2015 13:00:18" />
   <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="05/12/2015 13:00:18" />
   <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="05/12/2015 13:00:18" />
+  <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\back.png" archivePath="Images\back.png" lastWriteTime="06/12/2015 01:44:52" />
+  <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\basecircle.png" archivePath="Images\basecircle.png" lastWriteTime="06/12/2015 01:44:52" />
+  <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\cancel.png" archivePath="Images\cancel.png" lastWriteTime="06/12/2015 01:44:52" />
+  <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\check.png" archivePath="Images\check.png" lastWriteTime="06/12/2015 01:44:52" />
+  <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\close.png" archivePath="Images\close.png" lastWriteTime="06/12/2015 01:44:52" />
+  <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\delete.png" archivePath="Images\delete.png" lastWriteTime="06/12/2015 01:44:52" />
+  <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\download.png" archivePath="Images\download.png" lastWriteTime="06/12/2015 01:44:52" />
+  <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\edit.png" archivePath="Images\edit.png" lastWriteTime="06/12/2015 01:44:52" />
+  <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\favs.addto.png" archivePath="Images\favs.addto.png" lastWriteTime="06/12/2015 01:44:52" />
+  <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\favs.png" archivePath="Images\favs.png" lastWriteTime="06/12/2015 01:44:52" />
+  <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\feature.alarm.png" archivePath="Images\feature.alarm.png" lastWriteTime="06/12/2015 01:44:52" />
+  <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\feature.calendar.png" archivePath="Images\feature.calendar.png" lastWriteTime="06/12/2015 01:44:52" />
+  <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\feature.camera.png" archivePath="Images\feature.camera.png" lastWriteTime="06/12/2015 01:44:52" />
+  <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\feature.email.png" archivePath="Images\feature.email.png" lastWriteTime="06/12/2015 01:44:52" />
+  <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\feature.phone.png" archivePath="Images\feature.phone.png" lastWriteTime="06/12/2015 01:44:52" />
+  <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\feature.search.png" archivePath="Images\feature.search.png" lastWriteTime="06/12/2015 01:44:52" />
+  <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\feature.settings.png" archivePath="Images\feature.settings.png" lastWriteTime="06/12/2015 01:44:52" />
+  <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\feature.video.png" archivePath="Images\feature.video.png" lastWriteTime="06/12/2015 01:44:52" />
+  <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\folder.png" archivePath="Images\folder.png" lastWriteTime="06/12/2015 01:44:52" />
+  <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\like.png" archivePath="Images\like.png" lastWriteTime="06/12/2015 01:44:52" />
+  <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\microphone.png" archivePath="Images\microphone.png" lastWriteTime="06/12/2015 01:44:52" />
+  <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\minus.png" archivePath="Images\minus.png" lastWriteTime="06/12/2015 01:44:52" />
+  <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\new.png" archivePath="Images\new.png" lastWriteTime="06/12/2015 01:44:52" />
+  <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\next.png" archivePath="Images\next.png" lastWriteTime="06/12/2015 01:44:52" />
+  <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\overflowdots.png" archivePath="Images\overflowdots.png" lastWriteTime="06/12/2015 01:44:52" />
+  <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\questionmark.png" archivePath="Images\questionmark.png" lastWriteTime="06/12/2015 01:44:52" />
+  <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\refresh.png" archivePath="Images\refresh.png" lastWriteTime="06/12/2015 01:44:52" />
+  <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\save.png" archivePath="Images\save.png" lastWriteTime="06/12/2015 01:44:52" />
+  <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\share.png" archivePath="Images\share.png" lastWriteTime="06/12/2015 01:44:52" />
+  <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\stop.png" archivePath="Images\stop.png" lastWriteTime="06/12/2015 01:44:52" />
+  <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\sync.png" archivePath="Images\sync.png" lastWriteTime="06/12/2015 01:44:52" />
+  <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\transport.ff.png" archivePath="Images\transport.ff.png" lastWriteTime="06/12/2015 01:44:52" />
+  <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\transport.pause.png" archivePath="Images\transport.pause.png" lastWriteTime="06/12/2015 01:44:52" />
+  <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\transport.play.png" archivePath="Images\transport.play.png" lastWriteTime="06/12/2015 01:44:52" />
+  <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\transport.rew.png" archivePath="Images\transport.rew.png" lastWriteTime="06/12/2015 01:44:52" />
+  <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\upload.png" archivePath="Images\upload.png" lastWriteTime="06/12/2015 01:44:52" />
   <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="05/12/2015 13:19:51" />
   <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Bin\Debug\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="05/12/2015 13:00:18" />
   <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="05/12/2015 13:00:18" />
@@ -25,6 +62,6 @@
   <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\packages\Microsoft.Net.Http.2.2.29\lib\sl4-windowsphone71\System.Net.Http.Extensions.xml" archivePath="System.Net.Http.Extensions.xml" lastWriteTime="05/12/2015 13:10:19" />
   <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\packages\Microsoft.Net.Http.2.2.29\lib\sl4-windowsphone71\System.Net.Http.Primitives.xml" archivePath="System.Net.Http.Primitives.xml" lastWriteTime="05/12/2015 13:10:19" />
   <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="05/12/2015 13:24:01" />
-  <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\obj\Debug\MDILProjectFiles.xml" archivePath="MDILProjectFiles.xml" lastWriteTime="05/12/2015 21:42:05" />
-  <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Bin\Debug\AppxManifest.xml" archivePath="AppxManifest.xml" lastWriteTime="05/12/2015 20:19:28" />
+  <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\obj\Debug\MDILProjectFiles.xml" archivePath="MDILProjectFiles.xml" lastWriteTime="06/12/2015 05:08:21" />
+  <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Bin\Debug\AppxManifest.xml" archivePath="AppxManifest.xml" lastWriteTime="06/12/2015 04:53:50" />
 </xapCache>

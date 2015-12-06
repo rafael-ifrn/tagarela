@@ -11,6 +11,7 @@ using System.Net.Http;
 using Newtonsoft.Json;
 using System.Text;
 using System.Collections.ObjectModel;
+using Tagarela.Model;
 
 namespace Tagarela
 {
@@ -41,17 +42,27 @@ namespace Tagarela
 
         }
 
+        private HttpClient requisicaoHttp()
+        {
+            HttpClient httpClient = new HttpClient();
+            httpClient.BaseAddress = new Uri(servidor);
+
+            return httpClient;
+        }
+
+        private StringContent conteudoJSON(string json)
+        {
+            return new StringContent(json, Encoding.UTF8, "application/json");
+        }
+
 
         private async void recuperaPendentes(string sessao)
         {
 
-            HttpClient httpClient = new HttpClient();
-            httpClient.BaseAddress = new Uri(servidor);
+            var response = await requisicaoHttp().GetAsync("/api/amigo/" + sessao + "/pendentes");
+            var resposta = response.Content.ReadAsStringAsync().Result;
 
-            var response = await httpClient.GetAsync("/api/amigo/" + sessao + "/pendentes");
-            var str = response.Content.ReadAsStringAsync().Result;
-
-            List<Model.Amigo> amigos = JsonConvert.DeserializeObject<List<Model.Amigo>>(str);
+            List<Model.Amigo> amigos = JsonConvert.DeserializeObject<List<Model.Amigo>>(resposta);
 
             if (amigos != null)
             {
@@ -63,12 +74,13 @@ namespace Tagarela
         }
 
 
-
-        private async void btnAdicionar_Click(object sender, RoutedEventArgs e)
+        private void btVoltar_Click(object sender, EventArgs e)
         {
+            NavigationService.GoBack();
+        }
 
-            HttpClient httpClient = new HttpClient();
-            httpClient.BaseAddress = new Uri(servidor);
+        private async void btnAdicionar_Click(object sender, EventArgs e)
+        {
 
             Model.AdicionarAmigo a = new Model.AdicionarAmigo
             {
@@ -76,25 +88,26 @@ namespace Tagarela
                 amigo = txtAmigo.Text,
             };
 
-            string s = JsonConvert.SerializeObject(a);
+            var response = await requisicaoHttp().PostAsync("/api/amigo", conteudoJSON(JsonConvert.SerializeObject(a)));
 
-            var content = new StringContent(s, Encoding.UTF8, "application/json");
+            var resposta = response.Content.ReadAsStringAsync().Result;
 
-            var response = await httpClient.PostAsync("/api/amigo", content);
-
-            var str = response.Content.ReadAsStringAsync().Result;
-
-//            MessageBox.Show(String.Format("Resposta: {0}", str));
-
-            Model.AdicionarAmigoResposta resposta = JsonConvert.DeserializeObject<Model.AdicionarAmigoResposta>(str);
-
-            if (resposta.result)
+            if (response.StatusCode == HttpStatusCode.OK)
             {
-                MessageBox.Show(String.Format("Solicitação de amizade realizada com sucesso."));
-                NavigationService.GoBack();
+                Model.AdicionarAmigoResposta aResposta = JsonConvert.DeserializeObject<Model.AdicionarAmigoResposta>(resposta);
+
+                if (aResposta.result)
+                {
+                    MessageBox.Show(String.Format("Solicitação de amizade realizada com sucesso."));
+                    NavigationService.GoBack();
+                }
+                else {
+                    MessageBox.Show(String.Format("Não foi possível fazer solicitação."));
+                }
             }
             else {
-                MessageBox.Show(String.Format("Não foi possível fazer solicitação."));
+                ErroPadrao aResposta = JsonConvert.DeserializeObject<ErroPadrao>(resposta);
+                MessageBox.Show(aResposta.message);
             }
 
         }

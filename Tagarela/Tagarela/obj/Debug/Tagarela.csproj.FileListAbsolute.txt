@@ -106,6 +106,8 @@ C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\obj\Debug\Registrar.
 C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\obj\Debug\Usuario.g.cs
 C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\obj\Debug\AdicionarAmigo.g.cs
 C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\obj\Debug\AceitarAmigo.g.cs
+C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\obj\Debug\DesbloquearAmigo.g.cs
+C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\obj\Debug\Configuracoes.g.cs
 C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\obj\Debug\System.Net.Http\layout.resfiles
 C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\obj\Debug\System.Net.Http\layout.resfiles.intermediate
 C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\obj\Debug\System.Net.Http\Resources.resfiles

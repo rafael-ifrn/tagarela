@@ -11,6 +11,7 @@ using System.Net.Http;
 using Newtonsoft.Json;
 using System.Text;
 using System.Collections.ObjectModel;
+using Tagarela.Model;
 
 namespace Tagarela
 {
@@ -43,42 +44,67 @@ namespace Tagarela
         }
 
 
-        private async void recuperaPedidos(string sessao)
-        {
 
+
+        private HttpClient requisicaoHttp()
+        {
             HttpClient httpClient = new HttpClient();
             httpClient.BaseAddress = new Uri(servidor);
 
-            var response = await httpClient.GetAsync("/api/amigo/" + sessao + "/pedidos");
-            var str = response.Content.ReadAsStringAsync().Result;
+            return httpClient;
+        }
 
-            List<Model.Amigo> amigos = JsonConvert.DeserializeObject<List<Model.Amigo>>(str);
-
-            if (amigos != null)
-            {
-                foreach (Model.Amigo amigo in amigos)
-                {
-                    if (!pedidos.Contains(amigo.email))
-                    {
-                        pedidos.Add(amigo.email);
-                    }
-                }
-            }
+        private StringContent conteudoJSON(string json)
+        {
+            return new StringContent(json, Encoding.UTF8, "application/json");
         }
 
 
 
-        private async void btAceitar_Click(object sender, RoutedEventArgs e)
+        private async void recuperaPedidos(string sessao)
         {
-            HttpClient httpClient = new HttpClient();
-            httpClient.BaseAddress = new Uri(servidor);
 
-            string selecionado = lbPedidos.SelectedItem.ToString();
-            if (selecionado == null || selecionado == "")
+            var response = await requisicaoHttp().GetAsync("/api/amigo/" + sessao + "/pedidos");
+            var resposta = response.Content.ReadAsStringAsync().Result;
+
+            if (response.StatusCode == HttpStatusCode.OK)
+            {
+
+                List<Amigo> amigos = JsonConvert.DeserializeObject<List<Amigo>>(resposta);
+
+                if (amigos != null)
+                {
+                    foreach (Amigo amigo in amigos)
+                    {
+                        if (!pedidos.Contains(amigo.email))
+                        {
+                            pedidos.Add(amigo.email);
+                        }
+                    }
+                }
+            } else
+            {
+                Model.ErroPadrao aResposta = JsonConvert.DeserializeObject<Model.ErroPadrao>(resposta);
+                MessageBox.Show(aResposta.message);
+            }
+        }
+
+
+        private void btVoltar_Click(object sender, EventArgs e)
+        {
+            NavigationService.GoBack();
+        }
+
+        private async void btAceitar_Click(object sender, EventArgs e)
+        {
+            
+            if (lbPedidos.SelectedItem == null)
             {
                 MessageBox.Show(String.Format("Selecione um usuário."));
             }
             else {
+
+                string selecionado = lbPedidos.SelectedItem.ToString();
 
                 Model.AdicionarAmigo a = new Model.AdicionarAmigo
                 {
@@ -86,31 +112,34 @@ namespace Tagarela
                     amigo = selecionado
                 };
 
-                string s = JsonConvert.SerializeObject(a);
+                var response = await requisicaoHttp().PutAsync("/api/amigo", conteudoJSON(JsonConvert.SerializeObject(a)));
 
-                var content = new StringContent(s, Encoding.UTF8, "application/json");
+                var resposta = response.Content.ReadAsStringAsync().Result;
+                //MessageBox.Show(String.Format("Resposta: {0}", resposta));
 
-                var response = await httpClient.PutAsync("/api/amigo", content);
 
-                var str = response.Content.ReadAsStringAsync().Result;
-
-                MessageBox.Show(String.Format("solicitação {0},\n Resposta: {1}", s, str));
-
-                Model.AdicionarAmigoResposta resposta = JsonConvert.DeserializeObject<Model.AdicionarAmigoResposta>(str);
-
-                if (resposta.result)
+                if (response.StatusCode == HttpStatusCode.OK)
                 {
-                    MessageBox.Show(String.Format("Amigo adicionado com sucesso."));
-                    if (lbPedidos.Items.Count == 1)
+                    AdicionarAmigoResposta aResposta = JsonConvert.DeserializeObject<AdicionarAmigoResposta>(resposta);
+
+                    if (aResposta.result)
                     {
-                        NavigationService.GoBack();
+                        MessageBox.Show(String.Format("Amigo adicionado com sucesso."));
+                        if (lbPedidos.Items.Count == 1)
+                        {
+                            NavigationService.GoBack();
+                        }
+                        else {
+                            pedidos.Remove(selecionado);
+                        }
                     }
                     else {
-                        pedidos.Remove(selecionado);
+                        MessageBox.Show(String.Format("Não foi possível adicionar o amigo."));
                     }
                 }
                 else {
-                    MessageBox.Show(String.Format("Não foi possível adicionar o amigo."));
+                    ErroPadrao aResposta = JsonConvert.DeserializeObject<ErroPadrao>(resposta);
+                    MessageBox.Show(aResposta.message);
                 }
             }
 

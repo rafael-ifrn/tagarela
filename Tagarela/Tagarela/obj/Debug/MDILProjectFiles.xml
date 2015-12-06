@@ -3,6 +3,7 @@
   <XAPFiles>
     <File>resources.pri</File>
     <File>Tagarela.dll</File>
+    <File>Images\add.png</File>
     <File>Assets\AlignmentGrid.png</File>
     <File>Assets\BadgeLogo.png</File>
     <File>Assets\Logo.png</File>
@@ -15,6 +16,42 @@
     <File>Assets\Tiles\FlipCycleTileSmall.png</File>
     <File>Assets\Tiles\IconicTileMediumLarge.png</File>
     <File>Assets\Tiles\IconicTileSmall.png</File>
+    <File>Images\back.png</File>
+    <File>Images\basecircle.png</File>
+    <File>Images\cancel.png</File>
+    <File>Images\check.png</File>
+    <File>Images\close.png</File>
+    <File>Images\delete.png</File>
+    <File>Images\download.png</File>
+    <File>Images\edit.png</File>
+    <File>Images\favs.addto.png</File>
+    <File>Images\favs.png</File>
+    <File>Images\feature.alarm.png</File>
+    <File>Images\feature.calendar.png</File>
+    <File>Images\feature.camera.png</File>
+    <File>Images\feature.email.png</File>
+    <File>Images\feature.phone.png</File>
+    <File>Images\feature.search.png</File>
+    <File>Images\feature.settings.png</File>
+    <File>Images\feature.video.png</File>
+    <File>Images\folder.png</File>
+    <File>Images\like.png</File>
+    <File>Images\microphone.png</File>
+    <File>Images\minus.png</File>
+    <File>Images\new.png</File>
+    <File>Images\next.png</File>
+    <File>Images\overflowdots.png</File>
+    <File>Images\questionmark.png</File>
+    <File>Images\refresh.png</File>
+    <File>Images\save.png</File>
+    <File>Images\share.png</File>
+    <File>Images\stop.png</File>
+    <File>Images\sync.png</File>
+    <File>Images\transport.ff.png</File>
+    <File>Images\transport.pause.png</File>
+    <File>Images\transport.play.png</File>
+    <File>Images\transport.rew.png</File>
+    <File>Images\upload.png</File>
     <File>AppManifest.xaml</File>
     <File>Assets\ApplicationIcon.png</File>
     <File>Assets\Tiles\FlipCycleTileMedium.png</File>

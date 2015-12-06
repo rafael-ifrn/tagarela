@@ -25,12 +25,21 @@ namespace Tagarela
             InitializeComponent();
         }
 
-        private async void btnEntrar_Click(object sender, RoutedEventArgs e)
+        private HttpClient requisicaoHttp()
         {
             HttpClient httpClient = new HttpClient();
             httpClient.BaseAddress = new Uri(servidor);
 
+            return httpClient;
+        }
 
+        private StringContent conteudoJSON(string json)
+        {
+            return new StringContent(json, Encoding.UTF8, "application/json");
+        }
+
+        private async void btnEntrar_Click(object sender, RoutedEventArgs e)
+        {
             Model.Autenticacao a = new Model.Autenticacao
             {
                 username = txtEmail.Text,
@@ -38,20 +47,22 @@ namespace Tagarela
                 nick = txtNick.Text
             };
 
-            // MessageBox.Show(String.Format("O canal URI é {0}", uri));
+            var response = await requisicaoHttp().PostAsync("/api/user/create", conteudoJSON(JsonConvert.SerializeObject(a)));
 
-            string s = JsonConvert.SerializeObject(a);
+            var resposta = response.Content.ReadAsStringAsync().Result;
 
-            var content = new StringContent(s, Encoding.UTF8, "application/json");
-            var response = await httpClient.PostAsync("/api/user/create", content);
+            MessageBox.Show(String.Format("resposta do login é {0}", resposta));
 
-            var str = response.Content.ReadAsStringAsync().Result;
-
-            MessageBox.Show(String.Format("resposta do login é {0}", str));
-
-            if (str.IndexOf("{\"session") == 0)
+            if (response.StatusCode == HttpStatusCode.OK)
             {
-                NavigationService.Navigate(new Uri("/MainPage.xaml?username="+ txtEmail.Text, UriKind.Relative));
+                if (resposta.IndexOf("{\"session") == 0)
+                {
+                    NavigationService.Navigate(new Uri("/MainPage.xaml?username=" + txtEmail.Text, UriKind.Relative));
+                }
+            } else
+            {
+                Model.ErroPadrao aResposta = JsonConvert.DeserializeObject<Model.ErroPadrao>(resposta);
+                MessageBox.Show(aResposta.message);
             }
         }
     }
