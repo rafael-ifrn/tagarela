@@ -95,17 +95,17 @@ namespace Tagarela
                 string selecionado = lbBloqueados.SelectedItem.ToString();
 
                 Model.AdicionarAmigo a = new Model.AdicionarAmigo
-                {
+                {  
                     session = sessao,
-                    amigo = selecionado
+                    amigo = selecionado,
                 };
-
+   
                 //var response = await requisicaoHttp().PostAsync("/api/amigo", conteudoJSON(JsonConvert.SerializeObject(a)));
-                var response = await requisicaoHttp().DeleteAsync("/api/amigo?session="+ sessao +"&amigo="+ selecionado);
+                var response = await requisicaoHttp().PostAsync("/api/amigo/desbloquear", conteudoJSON(JsonConvert.SerializeObject(a)));
 
                 var resposta = response.Content.ReadAsStringAsync().Result;
 
-                MessageBox.Show(String.Format("Resposta: {0}", resposta));
+                //MessageBox.Show(String.Format("Resposta: {0}", resposta));
 
                 if (response.StatusCode == HttpStatusCode.OK)
                 {

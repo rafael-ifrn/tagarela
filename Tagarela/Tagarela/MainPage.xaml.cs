@@ -83,9 +83,11 @@ namespace Tagarela
 
                 Model.Dados sessao = JsonConvert.DeserializeObject<Model.Dados>(resposta);
 
-                if (sessao.session.email != "")
+                if (sessao.session.email != "" && sessao.session.email != null)
                 {
                     NavigationService.Navigate(new Uri("/Usuario.xaml?sessao=" + sessao.session._id + "&nick=" + sessao.session.nick + "&pedidos=" + sessao.session.pedidos.Length, UriKind.Relative));
+                } else {
+                    MessageBox.Show("Login ou senha incorretos");
                 }
 
             } else {

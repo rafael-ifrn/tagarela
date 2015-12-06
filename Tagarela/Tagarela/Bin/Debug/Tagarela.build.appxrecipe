@@ -1,209 +1,209 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>HADRON</Machine>
-    <WindowsUser>rafael</WindowsUser>
+    <Machine>DESKTOP-PL26BS6</Machine>
+    <WindowsUser>Bonei</WindowsUser>
     <TargetPlatformIdentifier>Windows Phone</TargetPlatformIdentifier>
     <TargetOsVersion>6.3</TargetOsVersion>
     <TargetOsDescription>Windows Phone 8.1</TargetOsDescription>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>3a2a32f1-ac69-4930-96bd-71ea03a6cb19</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\obj\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>D:\Bonei\tagarela\Tagarela\Tagarela\obj\Debug\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="D:\Bonei\tagarela\Tagarela\Tagarela\Bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Bin\Debug\Tagarela.dll">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\Tagarela\Bin\Debug\Tagarela.dll">
       <PackagePath>Tagarela.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\packages\Newtonsoft.Json.7.0.1\lib\portable-net45+wp80+win8+wpa81+dnxcore50\Newtonsoft.Json.dll">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\packages\Newtonsoft.Json.7.0.1\lib\portable-net45+wp80+win8+wpa81+dnxcore50\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\packages\Microsoft.Net.Http.2.2.29\lib\sl4-windowsphone71\System.Net.Http.dll">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\packages\Microsoft.Net.Http.2.2.29\lib\sl4-windowsphone71\System.Net.Http.dll">
       <PackagePath>System.Net.Http.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\packages\Microsoft.Net.Http.2.2.29\lib\sl4-windowsphone71\System.Net.Http.Extensions.dll">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\packages\Microsoft.Net.Http.2.2.29\lib\sl4-windowsphone71\System.Net.Http.Extensions.dll">
       <PackagePath>System.Net.Http.Extensions.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\packages\Microsoft.Net.Http.2.2.29\lib\sl4-windowsphone71\System.Net.Http.Primitives.dll">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\packages\Microsoft.Net.Http.2.2.29\lib\sl4-windowsphone71\System.Net.Http.Primitives.dll">
       <PackagePath>System.Net.Http.Primitives.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\packages\Newtonsoft.Json.7.0.1\lib\portable-net45+wp80+win8+wpa81+dnxcore50\Newtonsoft.Json.xml">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\packages\Newtonsoft.Json.7.0.1\lib\portable-net45+wp80+win8+wpa81+dnxcore50\Newtonsoft.Json.xml">
       <PackagePath>Newtonsoft.Json.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\packages\Microsoft.Net.Http.2.2.29\lib\sl4-windowsphone71\System.Net.Http.xml">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\packages\Microsoft.Net.Http.2.2.29\lib\sl4-windowsphone71\System.Net.Http.xml">
       <PackagePath>System.Net.Http.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\packages\Microsoft.Net.Http.2.2.29\lib\sl4-windowsphone71\System.Net.Http.Extensions.xml">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\packages\Microsoft.Net.Http.2.2.29\lib\sl4-windowsphone71\System.Net.Http.Extensions.xml">
       <PackagePath>System.Net.Http.Extensions.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\packages\Microsoft.Net.Http.2.2.29\lib\sl4-windowsphone71\System.Net.Http.Primitives.xml">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\packages\Microsoft.Net.Http.2.2.29\lib\sl4-windowsphone71\System.Net.Http.Primitives.xml">
       <PackagePath>System.Net.Http.Primitives.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\add.png">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\Tagarela\Images\add.png">
       <PackagePath>Images\add.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Assets\AlignmentGrid.png">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\Tagarela\Assets\AlignmentGrid.png">
       <PackagePath>Assets\AlignmentGrid.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Assets\ApplicationIcon.png">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\Tagarela\Assets\ApplicationIcon.png">
       <PackagePath>Assets\ApplicationIcon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Assets\BadgeLogo.png">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\Tagarela\Assets\BadgeLogo.png">
       <PackagePath>Assets\BadgeLogo.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Assets\Logo.png">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\Tagarela\Assets\Logo.png">
       <PackagePath>Assets\Logo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Assets\SplashScreen.png">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\Tagarela\Assets\SplashScreen.png">
       <PackagePath>Assets\SplashScreen.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Assets\SquareTile150x150.png">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\Tagarela\Assets\SquareTile150x150.png">
       <PackagePath>Assets\SquareTile150x150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Assets\SquareTile71x71.png">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\Tagarela\Assets\SquareTile71x71.png">
       <PackagePath>Assets\SquareTile71x71.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\Tagarela\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Assets\WideLogo.png">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\Tagarela\Assets\WideLogo.png">
       <PackagePath>Assets\WideLogo.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Assets\Tiles\FlipCycleTileLarge.png">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\Tagarela\Assets\Tiles\FlipCycleTileLarge.png">
       <PackagePath>Assets\Tiles\FlipCycleTileLarge.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Assets\Tiles\FlipCycleTileMedium.png">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\Tagarela\Assets\Tiles\FlipCycleTileMedium.png">
       <PackagePath>Assets\Tiles\FlipCycleTileMedium.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Assets\Tiles\FlipCycleTileSmall.png">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\Tagarela\Assets\Tiles\FlipCycleTileSmall.png">
       <PackagePath>Assets\Tiles\FlipCycleTileSmall.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Assets\Tiles\IconicTileMediumLarge.png">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\Tagarela\Assets\Tiles\IconicTileMediumLarge.png">
       <PackagePath>Assets\Tiles\IconicTileMediumLarge.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Assets\Tiles\IconicTileSmall.png">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\Tagarela\Assets\Tiles\IconicTileSmall.png">
       <PackagePath>Assets\Tiles\IconicTileSmall.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\back.png">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\Tagarela\Images\back.png">
       <PackagePath>Images\back.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\basecircle.png">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\Tagarela\Images\basecircle.png">
       <PackagePath>Images\basecircle.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\cancel.png">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\Tagarela\Images\cancel.png">
       <PackagePath>Images\cancel.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\check.png">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\Tagarela\Images\check.png">
       <PackagePath>Images\check.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\close.png">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\Tagarela\Images\close.png">
       <PackagePath>Images\close.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\delete.png">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\Tagarela\Images\delete.png">
       <PackagePath>Images\delete.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\download.png">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\Tagarela\Images\download.png">
       <PackagePath>Images\download.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\edit.png">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\Tagarela\Images\edit.png">
       <PackagePath>Images\edit.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\favs.addto.png">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\Tagarela\Images\favs.addto.png">
       <PackagePath>Images\favs.addto.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\favs.png">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\Tagarela\Images\favs.png">
       <PackagePath>Images\favs.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\feature.alarm.png">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\Tagarela\Images\feature.alarm.png">
       <PackagePath>Images\feature.alarm.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\feature.calendar.png">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\Tagarela\Images\feature.calendar.png">
       <PackagePath>Images\feature.calendar.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\feature.camera.png">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\Tagarela\Images\feature.camera.png">
       <PackagePath>Images\feature.camera.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\feature.email.png">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\Tagarela\Images\feature.email.png">
       <PackagePath>Images\feature.email.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\feature.phone.png">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\Tagarela\Images\feature.phone.png">
       <PackagePath>Images\feature.phone.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\feature.search.png">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\Tagarela\Images\feature.search.png">
       <PackagePath>Images\feature.search.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\feature.settings.png">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\Tagarela\Images\feature.settings.png">
       <PackagePath>Images\feature.settings.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\feature.video.png">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\Tagarela\Images\feature.video.png">
       <PackagePath>Images\feature.video.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\folder.png">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\Tagarela\Images\folder.png">
       <PackagePath>Images\folder.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\like.png">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\Tagarela\Images\like.png">
       <PackagePath>Images\like.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\microphone.png">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\Tagarela\Images\microphone.png">
       <PackagePath>Images\microphone.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\minus.png">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\Tagarela\Images\minus.png">
       <PackagePath>Images\minus.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\new.png">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\Tagarela\Images\new.png">
       <PackagePath>Images\new.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\next.png">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\Tagarela\Images\next.png">
       <PackagePath>Images\next.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\overflowdots.png">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\Tagarela\Images\overflowdots.png">
       <PackagePath>Images\overflowdots.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\questionmark.png">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\Tagarela\Images\questionmark.png">
       <PackagePath>Images\questionmark.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\refresh.png">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\Tagarela\Images\refresh.png">
       <PackagePath>Images\refresh.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\save.png">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\Tagarela\Images\save.png">
       <PackagePath>Images\save.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\share.png">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\Tagarela\Images\share.png">
       <PackagePath>Images\share.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\stop.png">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\Tagarela\Images\stop.png">
       <PackagePath>Images\stop.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\sync.png">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\Tagarela\Images\sync.png">
       <PackagePath>Images\sync.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\transport.ff.png">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\Tagarela\Images\transport.ff.png">
       <PackagePath>Images\transport.ff.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\transport.pause.png">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\Tagarela\Images\transport.pause.png">
       <PackagePath>Images\transport.pause.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\transport.play.png">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\Tagarela\Images\transport.play.png">
       <PackagePath>Images\transport.play.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\transport.rew.png">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\Tagarela\Images\transport.rew.png">
       <PackagePath>Images\transport.rew.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\upload.png">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\Tagarela\Images\upload.png">
       <PackagePath>Images\upload.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Bin\Debug\resources.pri">
+    <AppxPackagedFile Include="D:\Bonei\tagarela\Tagarela\Tagarela\Bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
