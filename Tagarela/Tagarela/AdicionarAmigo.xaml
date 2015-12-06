@@ -17,11 +17,6 @@
         <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
             <shell:ApplicationBarIconButton IconUri="/Images/back.png" Text="Voltar" Click="btVoltar_Click"/>
             <shell:ApplicationBarIconButton IconUri="/Images/check.png" Text="Adicionar amigo" Click="btnAdicionar_Click"/>
-            <!--            <shell:ApplicationBar.MenuItems>
-                <shell:ApplicationBarMenuItem Text="MenuItem 1"/>
-                <shell:ApplicationBarMenuItem Text="MenuItem 2"/>
-            </shell:ApplicationBar.MenuItems>
--->
         </shell:ApplicationBar>
     </phone:PhoneApplicationPage.ApplicationBar>
 
@@ -33,23 +28,19 @@
         </Grid.RowDefinitions>
 
         <!--TitlePanel contains the name of the application and page title-->
-        <StackPanel Grid.Row="0">
-            <TextBlock Style="{StaticResource PhoneTextNormalStyle}">
-            	<Run Text="Tagarela"/>
-            	<LineBreak/>
-            	<Run/>
-            </TextBlock>
-            <TextBlock Text="Adicionar" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" FontSize="48"/>
+        <StackPanel Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock Text="Tagarela" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock x:Name="tbTitulo" Text="Adicionar amigos" Style="{StaticResource PhoneTextTitle1Style}" FontSize="48"/>
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
-        <Grid x:Name="ContentPanel" Grid.Row="1" >
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
             <StackPanel Grid.Row="0">
-                <TextBlock x:Name="tbLogin" Style="{StaticResource PhoneTextTitle3Style}" Text="E-mail do amigo" />
+                <TextBlock x:Name="tbLogin" Text="E-mail do amigo" />
                 <TextBox x:Name="txtAmigo" Text="rafael@gmail.com" />
- 
-                <TextBlock x:Name="tbPedido" Style="{StaticResource PhoneTextTitle3Style}" Text="Pedidos pendentes" Margin="12,20,12,0" FontSize="26.667" FontWeight="Bold" />
-                <ListBox Margin="0, 10, 0, 0" x:Name="lbPendentes" RenderTransformOrigin="0.5,0.5" SelectionMode="Extended" ScrollViewer.HorizontalScrollBarVisibility="Visible" ScrollViewer.VerticalScrollBarVisibility="Visible" MaxHeight="400" Height="200" BorderBrush="#FFFDFDFD" BorderThickness="0" FontSize="24"/>
+
+                <TextBlock x:Name="tbPedido"  Margin="0, 20, 0, 0" Text="Pedidos pendentes" FontSize="26.667" FontWeight="Bold" />
+                <ListBox Margin="0, 10, 0, 0" x:Name="lbPendentes" RenderTransformOrigin="0.5,0.5" SelectionMode="Extended" ScrollViewer.HorizontalScrollBarVisibility="Visible" ScrollViewer.VerticalScrollBarVisibility="Visible" Height="363" BorderBrush="White" BorderThickness="0" FontSize="24"/>
             </StackPanel>
         </Grid>
     </Grid>

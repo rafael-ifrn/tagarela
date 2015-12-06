@@ -20,7 +20,7 @@ namespace Tagarela
 
         private string channelName = "tagarelaIFRN";
         private string servidor = "https://meumsn.herokuapp.com";
-        private string uri = "";
+        private string uriNotificacao = "";
 
         // Constructor
         public MainPage()
@@ -34,49 +34,65 @@ namespace Tagarela
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-
             var dic = NavigationContext.QueryString;
             if (dic.ContainsKey("username"))
             {
                 txtLogin.Text = dic["username"];
             }
-
-
         }
 
-        private async void btnLogin_Click(object sender, EventArgs e)
+
+        private HttpClient requisicaoHttp()
         {
             HttpClient httpClient = new HttpClient();
             httpClient.BaseAddress = new Uri(servidor);
 
-            canalNotificacao();
-            canalNotificacao();
+            return httpClient;
+        }
 
+        private StringContent conteudoJSON(string json)
+        {
+            return new StringContent(json, Encoding.UTF8, "application/json");
+        }
+
+
+        private async void btnLogin_Click(object sender, EventArgs e)
+        {
+            
+            canalNotificacao();
+            int tentativa = 1;
+            while (uriNotificacao == "")
+            {
+                canalNotificacao();
+                tentativa++;
+            }
 
             Model.Login a = new Model.Login
             {
                 username = txtLogin.Text,
-                password = txtSenha.Text,
+                password = txtSenha.Password,
             };
 
             // MessageBox.Show(String.Format("O canal URI é {0}", uri));
+            var response = await requisicaoHttp().PostAsync("/api/user/login", conteudoJSON(JsonConvert.SerializeObject(a)));
 
-            string s = JsonConvert.SerializeObject(a);
+            var resposta = response.Content.ReadAsStringAsync().Result;
 
-            var content = new StringContent(s, Encoding.UTF8, "application/json");
-
-            var response = await httpClient.PostAsync("/api/user/login", content);
-
-            var str = response.Content.ReadAsStringAsync().Result;
-
-            Model.Dados sessao = JsonConvert.DeserializeObject<Model.Dados>(str);
-
-            //MessageBox.Show(String.Format("resposta do login é {0}", sessao.session._id));
-
-            if (sessao.session.email != "")
+            if (response.StatusCode == HttpStatusCode.OK)
             {
-                NavigationService.Navigate(new Uri("/Usuario.xaml?sessao=" + sessao.session._id +"&nick="+ sessao.session.nick +"&pedidos="+ sessao.session.pedidos.Length, UriKind.Relative));
+
+                Model.Dados sessao = JsonConvert.DeserializeObject<Model.Dados>(resposta);
+
+                if (sessao.session.email != "")
+                {
+                    NavigationService.Navigate(new Uri("/Usuario.xaml?sessao=" + sessao.session._id + "&nick=" + sessao.session.nick + "&pedidos=" + sessao.session.pedidos.Length, UriKind.Relative));
+                }
+
+            } else {
+                Model.ErroPadrao aResposta = JsonConvert.DeserializeObject<Model.ErroPadrao>(resposta);
+                MessageBox.Show(aResposta.message);
             }
+
         }
 
         private void btnRegistrar_Click(object sender, EventArgs e)
@@ -116,7 +132,7 @@ namespace Tagarela
                 // Mostra dados do canal
                 System.Diagnostics.Debug.WriteLine(httpChannel.ChannelUri.ToString());
                 //MessageBox.Show(String.Format("O canal URI é {0}", httpChannel.ChannelUri.ToString()));
-                uri = httpChannel.ChannelUri.ToString();
+                uriNotificacao = httpChannel.ChannelUri.ToString();
                 // Atualiza serviço de usuários
                 //atualizarUsuario(txtUsuario.Text, httpChannel.ChannelUri.ToString());
             }
@@ -126,7 +142,7 @@ namespace Tagarela
         {
             Dispatcher.BeginInvoke(() =>
             {
-                uri = e.ChannelUri.ToString();
+                uriNotificacao = e.ChannelUri.ToString();
                 // Mostra dados do canal
                 System.Diagnostics.Debug.WriteLine(e.ChannelUri.ToString());
                 // MessageBox.Show(String.Format("O canal URI é {0}", e.ChannelUri.ToString()));

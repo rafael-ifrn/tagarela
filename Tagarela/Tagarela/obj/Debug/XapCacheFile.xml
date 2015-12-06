@@ -1,6 +1,6 @@
-﻿<xapCache source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Bin\Debug\Tagarela_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="06/12/2015 05:08:22">
-  <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Bin\Debug\resources.pri" archivePath="resources.pri" lastWriteTime="06/12/2015 05:08:20" />
-  <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\obj\Debug\Tagarela.dll" archivePath="Tagarela.dll" lastWriteTime="06/12/2015 05:08:19" />
+﻿<xapCache source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Bin\Debug\Tagarela_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="06/12/2015 06:34:25">
+  <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Bin\Debug\resources.pri" archivePath="resources.pri" lastWriteTime="06/12/2015 06:33:03" />
+  <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\obj\Debug\Tagarela.dll" archivePath="Tagarela.dll" lastWriteTime="06/12/2015 06:34:24" />
   <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\add.png" archivePath="Images\add.png" lastWriteTime="06/12/2015 01:44:52" />
   <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="05/12/2015 13:00:18" />
   <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Assets\BadgeLogo.png" archivePath="Assets\BadgeLogo.png" lastWriteTime="05/12/2015 13:00:18" />
@@ -62,6 +62,6 @@
   <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\packages\Microsoft.Net.Http.2.2.29\lib\sl4-windowsphone71\System.Net.Http.Extensions.xml" archivePath="System.Net.Http.Extensions.xml" lastWriteTime="05/12/2015 13:10:19" />
   <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\packages\Microsoft.Net.Http.2.2.29\lib\sl4-windowsphone71\System.Net.Http.Primitives.xml" archivePath="System.Net.Http.Primitives.xml" lastWriteTime="05/12/2015 13:10:19" />
   <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="05/12/2015 13:24:01" />
-  <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\obj\Debug\MDILProjectFiles.xml" archivePath="MDILProjectFiles.xml" lastWriteTime="06/12/2015 05:08:21" />
+  <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\obj\Debug\MDILProjectFiles.xml" archivePath="MDILProjectFiles.xml" lastWriteTime="06/12/2015 06:34:25" />
   <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Bin\Debug\AppxManifest.xml" archivePath="AppxManifest.xml" lastWriteTime="06/12/2015 04:53:50" />
 </xapCache>

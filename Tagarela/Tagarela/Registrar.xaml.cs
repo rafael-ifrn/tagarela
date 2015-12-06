@@ -38,20 +38,25 @@ namespace Tagarela
             return new StringContent(json, Encoding.UTF8, "application/json");
         }
 
-        private async void btnEntrar_Click(object sender, RoutedEventArgs e)
+
+        private void btVoltar_Click(object sender, EventArgs e)
+        {
+            NavigationService.GoBack();
+        }
+
+
+        private async void btnCadastrar_Click(object sender, EventArgs e)
         {
             Model.Autenticacao a = new Model.Autenticacao
             {
                 username = txtEmail.Text,
-                password = txtSenha.Text,
+                password = txtSenha.Password,
                 nick = txtNick.Text
             };
 
             var response = await requisicaoHttp().PostAsync("/api/user/create", conteudoJSON(JsonConvert.SerializeObject(a)));
 
             var resposta = response.Content.ReadAsStringAsync().Result;
-
-            MessageBox.Show(String.Format("resposta do login é {0}", resposta));
 
             if (response.StatusCode == HttpStatusCode.OK)
             {

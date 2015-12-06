@@ -34,29 +34,19 @@
 
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock Style="{StaticResource PhoneTextNormalStyle}">
-            	<Run Text="Tagarela"/>
-            	<LineBreak/>
-            	<Run/>
-            </TextBlock>
-            <TextBlock Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" FontSize="48">
-            	<Run Text="Configura"/>
-            	<Run Text="çõ"/>
-            	<Run Text="es"/>
-            	<LineBreak/>
-            	<Run/>
-            </TextBlock>
+            <TextBlock Text="Tagarela" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock x:Name="tbTitulo" Text="Configurações" Style="{StaticResource PhoneTextTitle1Style}" FontSize="48"/>
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
             <StackPanel Grid.Row="0">
-                <TextBlock x:Name="tbNick" Style="{StaticResource PhoneTextTitle3Style}">
+                <TextBlock x:Name="tbNick">
             	<Run Text="Apelido"/>
                 </TextBlock>
                 <TextBox x:Name="txtNick" />
 
-                <TextBlock x:Name="tbStatus" Style="{StaticResource PhoneTextTitle3Style}">
+                <TextBlock x:Name="tbStatus">
             	<Run Text="Status"/>
                 </TextBlock>
                 <TextBox x:Name="txtStatus" />

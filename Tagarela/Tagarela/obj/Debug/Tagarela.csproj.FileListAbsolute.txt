@@ -108,11 +108,3 @@ C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\obj\Debug\AdicionarA
 C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\obj\Debug\AceitarAmigo.g.cs
 C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\obj\Debug\DesbloquearAmigo.g.cs
 C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\obj\Debug\Configuracoes.g.cs
-C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\obj\Debug\System.Net.Http\layout.resfiles
-C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\obj\Debug\System.Net.Http\layout.resfiles.intermediate
-C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\obj\Debug\System.Net.Http\Resources.resfiles
-C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\obj\Debug\System.Net.Http\Resources.resfiles.intermediate
-C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\obj\Debug\System.Net.Http\pri.resfiles
-C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\obj\Debug\System.Net.Http\pri.resfiles.intermediate
-C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\obj\Debug\System.Net.Http\priconfig.xml
-C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\obj\Debug\System.Net.Http\priconfig.xml.intermediate
