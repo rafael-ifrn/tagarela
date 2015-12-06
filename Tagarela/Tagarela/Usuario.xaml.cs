@@ -180,5 +180,10 @@ namespace Tagarela
         {
             NavigationService.Navigate(new Uri("/DesbloquearAmigo.xaml?sessao=" + sessao, UriKind.Relative));
         }
+
+        private void lbAmigos_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            //NavigationService.Navigate();
+        }
     }
 }

@@ -1,6 +1,6 @@
-﻿<xapCache source="D:\Bonei\tagarela\Tagarela\Tagarela\Bin\Debug\Tagarela_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="06/12/2015 13:38:26">
-  <file source="D:\Bonei\tagarela\Tagarela\Tagarela\Bin\Debug\resources.pri" archivePath="resources.pri" lastWriteTime="06/12/2015 13:16:27" />
-  <file source="D:\Bonei\tagarela\Tagarela\Tagarela\obj\Debug\Tagarela.dll" archivePath="Tagarela.dll" lastWriteTime="06/12/2015 13:38:25" />
+﻿<xapCache source="D:\Bonei\tagarela\Tagarela\Tagarela\Bin\Debug\Tagarela_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="06/12/2015 15:36:00">
+  <file source="D:\Bonei\tagarela\Tagarela\Tagarela\Bin\Debug\resources.pri" archivePath="resources.pri" lastWriteTime="06/12/2015 15:35:58" />
+  <file source="D:\Bonei\tagarela\Tagarela\Tagarela\obj\Debug\Tagarela.dll" archivePath="Tagarela.dll" lastWriteTime="06/12/2015 15:35:57" />
   <file source="D:\Bonei\tagarela\Tagarela\Tagarela\Images\add.png" archivePath="Images\add.png" lastWriteTime="06/12/2015 10:20:55" />
   <file source="D:\Bonei\tagarela\Tagarela\Tagarela\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="06/12/2015 10:20:55" />
   <file source="D:\Bonei\tagarela\Tagarela\Tagarela\Assets\BadgeLogo.png" archivePath="Assets\BadgeLogo.png" lastWriteTime="06/12/2015 10:20:55" />
@@ -68,6 +68,6 @@
   <file source="D:\Bonei\tagarela\Tagarela\Tagarela\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="06/12/2015 10:20:55" />
   <file source="D:\Bonei\tagarela\Tagarela\Tagarela\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="06/12/2015 10:20:55" />
   <file source="D:\Bonei\tagarela\Tagarela\Tagarela\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="06/12/2015 10:20:55" />
-  <file source="D:\Bonei\tagarela\Tagarela\Tagarela\obj\Debug\MDILProjectFiles.xml" archivePath="MDILProjectFiles.xml" lastWriteTime="06/12/2015 13:38:26" />
-  <file source="D:\Bonei\tagarela\Tagarela\Tagarela\Bin\Debug\AppxManifest.xml" archivePath="AppxManifest.xml" lastWriteTime="06/12/2015 10:30:18" />
+  <file source="D:\Bonei\tagarela\Tagarela\Tagarela\obj\Debug\MDILProjectFiles.xml" archivePath="MDILProjectFiles.xml" lastWriteTime="06/12/2015 15:35:59" />
+  <file source="D:\Bonei\tagarela\Tagarela\Tagarela\Bin\Debug\AppxManifest.xml" archivePath="AppxManifest.xml" lastWriteTime="06/12/2015 15:35:58" />
 </xapCache>

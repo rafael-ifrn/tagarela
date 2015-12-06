@@ -162,3 +162,12 @@ D:\Bonei\tagarela\Tagarela\Tagarela\obj\Debug\MultipleQualifiersPerDimensionFoun
 D:\Bonei\tagarela\Tagarela\Tagarela\obj\Debug\ProjectArchitectures.txt
 D:\Bonei\tagarela\Tagarela\Tagarela\obj\Debug\MDILProjectFiles.xml
 D:\Bonei\tagarela\Tagarela\Tagarela\obj\Debug\XapCacheFile.xml
+D:\Bonei\tagarela\Tagarela\Tagarela\obj\Debug\Chat.g.cs
+D:\Bonei\tagarela\Tagarela\Tagarela\obj\Debug\System.Net.Http\layout.resfiles
+D:\Bonei\tagarela\Tagarela\Tagarela\obj\Debug\System.Net.Http\layout.resfiles.intermediate
+D:\Bonei\tagarela\Tagarela\Tagarela\obj\Debug\System.Net.Http\Resources.resfiles
+D:\Bonei\tagarela\Tagarela\Tagarela\obj\Debug\System.Net.Http\Resources.resfiles.intermediate
+D:\Bonei\tagarela\Tagarela\Tagarela\obj\Debug\System.Net.Http\pri.resfiles
+D:\Bonei\tagarela\Tagarela\Tagarela\obj\Debug\System.Net.Http\pri.resfiles.intermediate
+D:\Bonei\tagarela\Tagarela\Tagarela\obj\Debug\System.Net.Http\priconfig.xml
+D:\Bonei\tagarela\Tagarela\Tagarela\obj\Debug\System.Net.Http\priconfig.xml.intermediate
