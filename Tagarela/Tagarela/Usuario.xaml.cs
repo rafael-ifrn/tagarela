@@ -130,51 +130,7 @@ namespace Tagarela
             NavigationService.Navigate(new Uri("/AceitarAmigo.xaml?sessao=" + sessao, UriKind.Relative));
         }
 
-        private async void btBloquear_Click(object sender, EventArgs e)
-        {
-
-            if (lbAmigos.SelectedItem == null)
-            {
-                MessageBox.Show(String.Format("Selecione um usuário."));
-            }
-            else {
-                string selecionado = lbAmigos.SelectedItem.ToString();
-                string email = "";
-                email = selecionado.Substring(selecionado.LastIndexOf('<') + 1, selecionado.Length - (selecionado.LastIndexOf('<') + 2));
-                //MessageBox.Show(String.Format("email: {0}", email));
-
-                Model.AdicionarAmigo a = new Model.AdicionarAmigo
-                {
-                    session = sessao,
-                    amigo = email
-                };
-
-                var response = await requisicaoHttp().PostAsync("/api/amigo/bloquear", conteudoJSON(JsonConvert.SerializeObject(a)));
-
-                var resposta = response.Content.ReadAsStringAsync().Result;
-                //MessageBox.Show(String.Format("Resposta: {0}", resposta));
-
-
-                if (response.StatusCode == HttpStatusCode.OK)
-                {
-                    Model.AdicionarAmigoResposta aResposta = JsonConvert.DeserializeObject<Model.AdicionarAmigoResposta>(resposta);
-
-                    if (aResposta.result)
-                    {
-                        MessageBox.Show(String.Format("Amigo bloqueado com sucesso."));
-                        amigos.Remove(selecionado);
-                    }
-                    else {
-                        MessageBox.Show(String.Format("Não foi possível bloquear o amigo."));
-                    }
-                }
-                else {
-                    Model.ErroPadrao aResposta = JsonConvert.DeserializeObject<Model.ErroPadrao>(resposta);
-                    MessageBox.Show(aResposta.message);
-                }
-
-            }
-        }
+        
 
         private void btDesbloquear_Click(object sender, EventArgs e)
         {
@@ -183,6 +139,17 @@ namespace Tagarela
 
         private void lbAmigos_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            if (lbAmigos.SelectedItem != null) {
+                string selecionado = lbAmigos.SelectedItem.ToString();
+                string email = "";
+                email = selecionado.Substring(selecionado.LastIndexOf('<') + 1, selecionado.Length - (selecionado.LastIndexOf('<') + 2));
+
+                string nick = "";
+                nick = selecionado.Substring(0, selecionado.LastIndexOf('<') -1);
+
+
+                NavigationService.Navigate(new Uri("/Chat.xaml?sessao=" + sessao +"&email="+ email + "&nick=" + nick, UriKind.Relative));
+            }
             //NavigationService.Navigate();
         }
     }

@@ -171,3 +171,4 @@ D:\Bonei\tagarela\Tagarela\Tagarela\obj\Debug\System.Net.Http\pri.resfiles
 D:\Bonei\tagarela\Tagarela\Tagarela\obj\Debug\System.Net.Http\pri.resfiles.intermediate
 D:\Bonei\tagarela\Tagarela\Tagarela\obj\Debug\System.Net.Http\priconfig.xml
 D:\Bonei\tagarela\Tagarela\Tagarela\obj\Debug\System.Net.Http\priconfig.xml.intermediate
+C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\obj\Debug\Chat.g.cs

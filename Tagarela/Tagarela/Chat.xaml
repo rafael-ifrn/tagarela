@@ -13,6 +13,16 @@
     mc:Ignorable="d"
     shell:SystemTray.IsVisible="True">
 
+
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton IconUri="/Images/back.png" Text="Voltar" Click="btVoltar_Click"/>
+ <!--           <shell:ApplicationBarIconButton IconUri="/Images/check.png" Text="Adicionar amigo" Click="btnAdicionar_Click"/> -->
+            <shell:ApplicationBarIconButton IconUri="/Images/cancel.png" Text="Bloquear amigo" Click="btBloquear_Click"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/sync.png" Text="Atualizar" Click="btSync_Click"/>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Background="Transparent">
         <Grid.RowDefinitions>
@@ -22,17 +32,43 @@
 
 
         <!--ContentPanel - place additional content here-->
-        <TextBlock Text="Tagarela" Style="{StaticResource PhoneTextNormalStyle}" Margin="12,0,24,107"/>
-        <Image x:Name="image" HorizontalAlignment="Left" Margin="12,34,0,0" VerticalAlignment="Top" Width="80" Height="80"/>
-        <TextBlock x:Name="tbNick" Text="nick" Style="{StaticResource PhoneTextTitle1Style}" FontSize="48" Margin="117,32,268,38"/>
-        <Button x:Name="tbClear" Content="Clear" HorizontalAlignment="Center" Margin="391,-17,0,92" VerticalAlignment="Center" FontSize="20" FontFamily="Segoe WP" BorderThickness="0" Height="59" Width="89" Opacity="0.9" Foreground="White" Click="tbClear_Click"/>
-        <Grid HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="460" Height="504" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" Background="White" Opacity="0.8"/>
-        <Grid HorizontalAlignment="Left" Height="105" Margin="10,519,0,0" Grid.Row="1" VerticalAlignment="Top" Width="460">
-            <Border BorderThickness="0" Background="White" CornerRadius="20" Opacity="0.95">
-                <TextBlock Text="tbChat"/>
-            </Border>
+        <StackPanel Grid.Row="0" Margin="12,17,0,0">
+            <TextBlock Text="Tagarela" Style="{StaticResource PhoneTextNormalStyle}" />
+            <Grid VerticalAlignment="Top">
+                <Image x:Name="image" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Width="80" Height="80"/>
+                <TextBlock x:Name="tbNick" Text="nick" Style="{StaticResource PhoneTextTitle1Style}" FontSize="48" Margin="117,0,0,0"/>
+            </Grid>
+        </StackPanel>
+        <Button x:Name="tbClear" Content="Limpar" HorizontalAlignment="Center" Margin="370,-17,0,92" VerticalAlignment="Center" FontSize="20" FontFamily="Segoe WP" BorderThickness="0" Height="59" Width="110" Opacity="0.9" Foreground="White" Click="tbClear_Click"/>
+
+        <Grid x:Name="grdMensagens" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="1" VerticalAlignment="Top" Width="460" Height="450" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Visible" Opacity="0.8">
+            <StackPanel x:Name="stkMensagens" Grid.Row="0">
+                <!--                
+                <Grid HorizontalAlignment="Right" Grid.Row="1" VerticalAlignment="Top" Background="#FFD6FF9C" Margin="10,10,10,0" MaxWidth="395">
+                    <StackPanel Grid.Row="0">
+                        <TextBlock Text="ldkjfsd" VerticalAlignment="Top" Foreground="#FF000000" HorizontalAlignment="Right" Padding="5,3,5,0" TextWrapping="Wrap" />
+                        <TextBlock Text="ldkjfsd" VerticalAlignment="Top" Foreground="#FF000000" HorizontalAlignment="Right" FontSize="10.667" Padding="5,0,5,3" />
+                    </StackPanel>
+                </Grid>
+
+                <Grid HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" Background="#FFB0E4F7" Margin="10,10,10,0" MaxWidth="395">
+                    <StackPanel Grid.Row="0">
+                        <TextBlock Text="te" VerticalAlignment="Top" Foreground="#FF000000" HorizontalAlignment="Right" Padding="5,3,5,0" />
+                        <TextBlock Text="Teste" VerticalAlignment="Top" Foreground="#FF000000" HorizontalAlignment="Left" FontSize="10.667" Padding="5,0,0,3" />
+                    </StackPanel>
+                </Grid>
+-->
+            </StackPanel>
         </Grid>
-  
+
+        <Grid HorizontalAlignment="Left" Height="110" Margin="10,460,0,0" Grid.Row="1" VerticalAlignment="Top" Width="460">
+            <Border BorderThickness="0" Background="White" CornerRadius="5" Opacity="0.95" Width="350" HorizontalAlignment="Left">
+                <TextBox x:Name="txtMensagem" Text="" TextWrapping="Wrap" FontSize="16"/>
+            </Border>
+            <Button x:Name="button" Content="Enviar" HorizontalAlignment="Left" Margin="355,0,-5,0" VerticalAlignment="Top" Width="110" Click="enviarMensagem"/>
+        </Grid>
+
+
     </Grid>
 
 </phone:PhoneApplicationPage>

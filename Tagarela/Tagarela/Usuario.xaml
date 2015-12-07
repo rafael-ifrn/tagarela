@@ -18,7 +18,6 @@
         <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
             <shell:ApplicationBarIconButton IconUri="/Images/add.png" Text="Aceitar amigo" Click="btAceitar_Click"/>
             <shell:ApplicationBarIconButton IconUri="/Images/feature.search.png" Text="Adicionar amigo" Click="btAdicionar_Click"/>
-            <shell:ApplicationBarIconButton IconUri="/Images/cancel.png" Text="Bloquear amigo" Click="btBloquear_Click"/>
             <shell:ApplicationBarIconButton IconUri="/Images/minus.png" Text="Desbloquera amigo" Click="btDesbloquear_Click"/>
             
             <shell:ApplicationBar.MenuItems>
@@ -47,7 +46,7 @@
             <StackPanel Grid.Row="0">
                 <TextBlock x:Name="tbSolicitacao" TextWrapping="Wrap" Text="Você possui solicitações de amizade" VerticalAlignment="Top" Margin="0,0,0,20" HorizontalAlignment="Right" Visibility="Collapsed"/>
                 <TextBlock x:Name="tbAmigos" TextWrapping="Wrap" Text="Amigos" FontSize="26.667" FontWeight="Bold" />
-                <ListBox Margin="0, 10, 0, 0" x:Name="lbAmigos" RenderTransformOrigin="0.5,0.5" SelectionMode="Extended" ScrollViewer.HorizontalScrollBarVisibility="Visible" ScrollViewer.VerticalScrollBarVisibility="Visible" FontSize="24" SelectionChanged="lbAmigos_SelectionChanged"/>
+                <ListBox Margin="0, 10, 0, 0" x:Name="lbAmigos" RenderTransformOrigin="0.5,0.5" SelectionMode="Extended" ScrollViewer.HorizontalScrollBarVisibility="Visible" ScrollViewer.VerticalScrollBarVisibility="Visible" FontSize="24" SelectionChanged="lbAmigos_SelectionChanged" Height="65"/>
             </StackPanel>
         </Grid>
     </Grid>
