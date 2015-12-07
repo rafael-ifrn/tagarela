@@ -67,6 +67,9 @@ namespace Tagarela
                 tentativa++;
             }
 
+
+
+            //MessageBox.Show(uriNotificacao); 
             Model.Login a = new Model.Login
             {
                 username = txtLogin.Text,

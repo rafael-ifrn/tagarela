@@ -42,8 +42,9 @@
         <Button x:Name="tbClear" Content="Limpar" HorizontalAlignment="Center" Margin="370,-17,0,92" VerticalAlignment="Center" FontSize="20" FontFamily="Segoe WP" BorderThickness="0" Height="59" Width="110" Opacity="0.9" Foreground="White" Click="tbClear_Click"/>
 
         <Grid x:Name="grdMensagens" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="1" VerticalAlignment="Top" Width="460" Height="450" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Visible" Opacity="0.8">
-            <StackPanel x:Name="stkMensagens" Grid.Row="0">
-                <!--                
+            <ScrollViewer HorizontalScrollBarVisibility="Visible" >
+                <StackPanel x:Name="stkMensagens" Grid.Row="0">
+                    <!--                
                 <Grid HorizontalAlignment="Right" Grid.Row="1" VerticalAlignment="Top" Background="#FFD6FF9C" Margin="10,10,10,0" MaxWidth="395">
                     <StackPanel Grid.Row="0">
                         <TextBlock Text="ldkjfsd" VerticalAlignment="Top" Foreground="#FF000000" HorizontalAlignment="Right" Padding="5,3,5,0" TextWrapping="Wrap" />
@@ -58,7 +59,8 @@
                     </StackPanel>
                 </Grid>
 -->
-            </StackPanel>
+                </StackPanel>
+            </ScrollViewer>
         </Grid>
 
         <Grid HorizontalAlignment="Left" Height="110" Margin="10,460,0,0" Grid.Row="1" VerticalAlignment="Top" Width="460">

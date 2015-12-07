@@ -1,6 +1,6 @@
-﻿<xapCache source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Bin\Debug\Tagarela_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="07/12/2015 02:55:24">
-  <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Bin\Debug\resources.pri" archivePath="resources.pri" lastWriteTime="07/12/2015 02:52:19" />
-  <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\obj\Debug\Tagarela.dll" archivePath="Tagarela.dll" lastWriteTime="07/12/2015 02:55:22" />
+﻿<xapCache source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Bin\Debug\Tagarela_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="07/12/2015 14:51:06">
+  <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Bin\Debug\resources.pri" archivePath="resources.pri" lastWriteTime="07/12/2015 14:51:04" />
+  <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\obj\Debug\Tagarela.dll" archivePath="Tagarela.dll" lastWriteTime="07/12/2015 14:51:03" />
   <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Images\add.png" archivePath="Images\add.png" lastWriteTime="06/12/2015 15:42:48" />
   <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="06/12/2015 15:42:48" />
   <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Assets\BadgeLogo.png" archivePath="Assets\BadgeLogo.png" lastWriteTime="06/12/2015 15:42:48" />
@@ -68,6 +68,6 @@
   <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="06/12/2015 15:42:48" />
   <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="06/12/2015 15:42:48" />
   <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="06/12/2015 15:42:48" />
-  <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\obj\Debug\MDILProjectFiles.xml" archivePath="MDILProjectFiles.xml" lastWriteTime="07/12/2015 02:55:24" />
-  <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Bin\Debug\AppxManifest.xml" archivePath="AppxManifest.xml" lastWriteTime="06/12/2015 16:53:49" />
+  <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\obj\Debug\MDILProjectFiles.xml" archivePath="MDILProjectFiles.xml" lastWriteTime="07/12/2015 14:51:05" />
+  <file source="C:\Users\rafael\Documents\GitHub\tagarela\Tagarela\Tagarela\Bin\Debug\AppxManifest.xml" archivePath="AppxManifest.xml" lastWriteTime="07/12/2015 14:34:59" />
 </xapCache>
