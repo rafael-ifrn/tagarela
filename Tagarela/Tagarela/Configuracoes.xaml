@@ -50,6 +50,8 @@
             	<Run Text="Status"/>
                 </TextBlock>
                 <TextBox x:Name="txtStatus" />
+                <Button x:Name="btCapturar" Content="Capturar foto" Click="btCapturar_Click"/>
+                <Image x:Name="imgAvatar" Height="258"/>
 
             </StackPanel>
         </Grid>

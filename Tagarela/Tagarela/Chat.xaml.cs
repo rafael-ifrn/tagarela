@@ -12,6 +12,7 @@ using System.Text;
 using Newtonsoft.Json;
 using Tagarela.Model;
 using System.Windows.Media;
+using System.Windows.Media.Imaging;
 
 namespace Tagarela
 {
@@ -49,6 +50,9 @@ namespace Tagarela
             {
                 tbNick.Text = dic["nick"];
             }
+
+            image.Source = new BitmapImage(new Uri("http://2.bp.blogspot.com/_Y7qS9c80BAc/TDN2BsLSKKI/AAAAAAAABpo/96AjxxCG9yk/s320/untitled.bmp"));
+
 
             selectMensagem();
         }

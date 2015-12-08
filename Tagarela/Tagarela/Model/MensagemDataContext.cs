@@ -27,16 +27,17 @@ namespace Tagarela.Model
             return dc;
         }
 
-
+        //Cannot remove an entity that has not been attached
         public void DeletarMensagem(string email)
         {
             MensagemDataContext dc = new MensagemDataContext();
 
-            var deleteMensagem = SelectMensagem(email);
+            IEnumerable<BDMensagem> mensagens = SelectMensagem(email);
 
-            foreach (var detail in deleteMensagem)
+            foreach (BDMensagem mensagem in mensagens)
             {
-                dc.BDMensagens.DeleteOnSubmit(detail);
+                dc.BDMensagens.DeleteOnSubmit(mensagem);
+                
             }
         }
 
@@ -52,11 +53,16 @@ namespace Tagarela.Model
             MensagemDataContext dc = OpenMensagemDataContext();
 
             var query = (from x in dc.BDMensagens select x).ToList();
+            var max_Query = 0;
 
-            var max_Query =
-              (from m in dc.BDMensagens
-               select m.id).Max();
-
+            try
+            {
+                max_Query =(from m in dc.BDMensagens
+                            select m.id).Max();
+            }
+            catch (InvalidOperationException ex) {
+            }
+            
             return max_Query;
         }
 
@@ -64,10 +70,9 @@ namespace Tagarela.Model
         {
             MensagemDataContext dc = OpenMensagemDataContext();
 
-            return
-            from msg in dc.BDMensagens
-            where msg.emailDestino == email || msg.emailOrigem == email
-            select msg;
+            return from msg in dc.BDMensagens
+                where msg.emailDestino == email || msg.emailOrigem == email
+                select msg;
         }
     }
 }
