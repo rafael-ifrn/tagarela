@@ -121,6 +121,7 @@
     <Compile Include="Model\Amigo.cs" />
     <Compile Include="Model\Amigos.cs" />
     <Compile Include="Model\Autenticacao.cs" />
+    <Compile Include="Model\BDMensagem.cs" />
     <Compile Include="Model\Configuracoes.cs" />
     <Compile Include="Model\ConfiguracoesResposta.cs" />
     <Compile Include="Model\Dados.cs" />
@@ -128,6 +129,7 @@
     <Compile Include="Model\ErroPadrao.cs" />
     <Compile Include="Model\Login.cs" />
     <Compile Include="Model\Mensagem.cs" />
+    <Compile Include="Model\MensagemDataContext.cs" />
     <Compile Include="Model\ReceberMensagem.cs" />
     <Compile Include="Model\Messages.cs" />
     <Compile Include="Model\Result.cs" />

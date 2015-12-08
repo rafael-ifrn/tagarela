@@ -23,6 +23,7 @@ namespace Tagarela
         private string uri = "";
         private string sessao = "";
         private string email = "";
+        private MensagemDataContext dc = new MensagemDataContext();
 
 
         public Chat()
@@ -48,12 +49,13 @@ namespace Tagarela
             {
                 tbNick.Text = dic["nick"];
             }
-            
+
+            selectMensagem();
         }
 
         private void tbClear_Click(object sender, RoutedEventArgs e)
         {
-            //Limpar Chat
+            dc.DeletarMensagem(email);
         }
 
 
@@ -103,10 +105,13 @@ namespace Tagarela
 
                     if (aResposta.result)
                     {
+                        BDMensagem msg = new BDMensagem { mensagem = a.text, emailOrigem = "", emailDestino = a.amigo, time = DateTime.Now.ToString("yyyy-MM-dd HH:MM:ss") };
+                        dc.InserirMensagem(msg);
+
                         //MessageBox.Show(String.Format("mensagem enviada."));
                         Mensagem mensagem = new Mensagem();
                         mensagem.text = a.text;
-                        mensagem.time = "agora";
+                        mensagem.time = DateTime.Now.ToString("yyyy-MM-dd HH:MM:ss");
                         //recuperar a data
                         adicionarMensagem(mensagem, "ENVIADO");
                         txtMensagem.Text = "";
@@ -149,8 +154,11 @@ namespace Tagarela
 
                     if (aResposta.Count > 0)
                     {
-                        string mensagens = "";
-                        foreach (Messages mensagem in aResposta) {
+                        //string mensagens = "";
+                        foreach (Messages mensagem in aResposta)
+                        {
+                            BDMensagem msg = new BDMensagem { mensagem = mensagem.messages.text, emailOrigem = email, emailDestino = mensagem.messages.to, time = mensagem.messages.time.Replace("T", " ") };
+                            dc.InserirMensagem(msg);
                             //mensagens += mensagem.messages.text +"\n\n";
                             adicionarMensagem(mensagem.messages, "RECEBIDO");
                         }
@@ -169,7 +177,8 @@ namespace Tagarela
         }
 
 
-        private void btSync_Click(object sender, EventArgs e) {
+        private void btSync_Click(object sender, EventArgs e)
+        {
             recuperarMensagens();
         }
 
@@ -217,7 +226,8 @@ namespace Tagarela
         }
 
 
-        private void adicionarMensagem(Mensagem mensagem, string origem) {
+        private void adicionarMensagem(Mensagem mensagem, string origem)
+        {
 
             Grid g = new Grid();
             g.MaxWidth = 395;
@@ -248,6 +258,7 @@ namespace Tagarela
                 mensa.HorizontalAlignment = HorizontalAlignment.Right;
 
                 outros.HorizontalAlignment = HorizontalAlignment.Right;
+
             }
             else {
                 g.Background = new SolidColorBrush(Color.FromArgb(0xFF, 0xB0, 0xE4, 0xF7));
@@ -257,14 +268,37 @@ namespace Tagarela
 
                 outros.HorizontalAlignment = HorizontalAlignment.Left;
             }
-
-
+           
             StackPanel stk = new StackPanel();
             stk.Children.Add(mensa);
             stk.Children.Add(outros);
             g.Children.Add(stk);
 
             stkMensagens.Children.Add(g);
+
+            ScrollViewer.ScrollToVerticalOffset(stkMensagens.ActualHeight+mensa.ActualHeight);
+        }
+
+        private void selectMensagem()
+        {
+            IEnumerable<BDMensagem> m = dc.SelectMensagem(email);
+            Mensagem msg = new Mensagem();
+
+            foreach (BDMensagem mensagem in m)
+            {
+                msg.text = mensagem.mensagem;
+                msg.time = mensagem.time;
+                msg.to = mensagem.emailDestino;
+
+                if (mensagem.emailOrigem != email)
+                {
+                    adicionarMensagem(msg, "ENVIADO");
+                }
+                else
+                {
+                    adicionarMensagem(msg, "RECEBIDO");
+                }
+            }
         }
     }
 }
